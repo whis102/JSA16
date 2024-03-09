@@ -1,0 +1,25 @@
+.pc , .tablet, .mobile {
+    font-size: 40px;
+    display: none;
+}
+
+/* PC */
+@media screen and (min-width: 1024px) {
+    .pc{
+        display: block;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .tablet{
+        display: block;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .mobile{
+        display: block;
+    }
+}
