@@ -14,7 +14,7 @@ body{
     position: relative;
 }
 
-.search-input{
+.search-thread{
     width: 100%;
     padding: 5px;
     height: 20px;
@@ -39,6 +39,63 @@ body{
     color: white;
 }
 
-.container{
+.wrap{
     width: 30%;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+#products {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding: 8em 0;
+  }
+  
+.card {
+    background-color: #ffffff;
+    max-width: 18em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+  
+.image-container {
+    text-align: center;
+  }
+  
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+  
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+  
+.container h5 {
+    font-weight: 500;
+}
+  
+.hide {
+    display: none;
+}
+  
+@media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      height: 10em;
+    }
+    
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
